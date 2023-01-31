@@ -1,2 +1,2 @@
 # consultadd
-All the python projects will be in this repo.
+All the consultadd internship projects will be in this repo.
