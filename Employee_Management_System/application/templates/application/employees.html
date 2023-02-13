@@ -1,0 +1,25 @@
+{% load static %}
+
+<!-- <link rel="stylesheet" href="../../static/application/employee.css"> -->
+<link rel="stylesheet" href="{% static 'application/employee.css' %}">
+
+<table>
+    <thead>
+        <tr>
+            <th>Employee Id</th>
+            <th>Employee Name</th>
+            <th>Employee Department</th>
+            <th>Manager</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for emp in Employee %}
+        <tr>
+            <td>{{emp.employee_id}} </td>
+            <td>{{emp.employee_name}}</td>
+            <td>{{emp.department.department_name}}</td>
+            <td>{{emp.is_manager}}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
