@@ -1,0 +1,19 @@
+{% load static%}
+<link rel="stylesheet" href="{% static 'application/department.css' %}">
+
+<table>
+    <thead>
+        <tr>
+            <td>Department id</td>
+            <td>Department name</td>
+        </tr>
+    </thead>
+    <tbody>
+            {% for dept in Department %}
+            <tr>
+                <td>{{dept.department_id}}</td>
+                <td>{{dept.department_name}}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
