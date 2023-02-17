@@ -11,5 +11,5 @@ class Department(models.Model):
 class Employee(models.Model):
     employee_id = models.IntegerField()
     employee_name = models.CharField(max_length=50)
-    department = models.ForeignKey(Department, on_delete=models.SET_NULL, null=True)
+    department_name = models.ForeignKey(Department, on_delete=models.SET_NULL, null=True)
     is_manager = models.BooleanField(default=False)
